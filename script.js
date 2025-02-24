@@ -5,9 +5,9 @@ const navToggle = document.getElementById("nav-toggle");
 // Add event listener for scrolling to change navbar background color
 window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-        navbar.style.background = "#0a192f";
+        navbar.classList.add("scrolled");
     } else {
-        navbar.style.background = "rgba(10, 25, 47, 0.9)";
+        navbar.classList.remove("scrolled");
     }
 });
 
